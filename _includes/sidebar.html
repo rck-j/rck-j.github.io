@@ -5,7 +5,7 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p style="color:white;">{{ site.description }}</p>
   </div>
 
   <nav class="sidebar-nav">
@@ -25,16 +25,24 @@
       {% endif %}
     {% endfor %}
 
-    <!-- Commenting out links from theme -->
-    <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
-    <!-- Comment out version  -->
-    <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
+  <!-- Remove Menu items -->
+  <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
   </nav>
 
-  <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+<div class="sidebar-item">
+  <a href="https://twitter.com/ml4me_io"><i class="fab fa-twitter-square" id="iconlinks" style="font-size:48px;color:white;"></i></a>
+  <a href="https://github.com/rck-j"><i class="fab fa-github-square" id="iconlinks" style="font-size:48px;color:white;"></i></a>
+  <a href="mailto:me@machinelearning4me.io" target="_top"><i class="fas fa-envelope-square" id="iconlinks" style="font-size:48px;color:white;"></i></a>
+</div>
+  <div class="sidebar-item" id="info">
+    <p style="text-align:center;">
+      &copy; {{ site.time | date: '%Y' }} {{site.author.name}}
+      <br>
+      Powered by <a href="https://jekyllrb.com" style="color:white;">Jekyll</a>
+      <br>
+      Using <a href="https://github.com/poole/lanyon" style="color:white;">Lanyon</a> theme.
     </p>
   </div>
 </div>
